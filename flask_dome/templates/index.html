@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html"> lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome to my home</title>
+</head>
+<body>
+    i love you
+    今天是{{ var }}，欢迎你 </br>
+    还剩下这些人:  </br>
+    {% for a in list %}
+        <li>  {{ a }} </li>
+    {% endfor %}
+
+    任务:</br>
+    <table border="1">
+        {% for key,value in task.items() %}   <!--字典变成（[key,value],）-->
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

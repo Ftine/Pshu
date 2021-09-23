@@ -1,0 +1,12 @@
+con = mysql.connector.connect(
+        host='localhost', port=3306,
+        user='root', password='root',
+        database='douban'
+    )
+    cursor = con.cursor()
+    sql = '''
+
+    '''
+    cursor.execute(sql)
+    cursor.close()
+    con.close()
